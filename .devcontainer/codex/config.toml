@@ -1,0 +1,12 @@
+profile = "azure-gpt5"
+
+[model_providers.azure]
+name = "Azure"
+base_url = "https://ygoai-eus2.openai.azure.com/openai"
+wire_api = "responses"
+query_params = { api-version = "2025-04-01-preview" }
+# env_key = "OPENAI_API_KEY"
+
+[profiles.azure-gpt5]
+model = "gpt-5"
+model_provider = "azure"
